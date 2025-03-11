@@ -89,12 +89,12 @@ void test_multiply_zero(void) {
 }
 
 void test_multiply_overflow(void) {
-    int result = multiply(INT_MAX, 2); // Should wrap around or cause undefined behavior
+    int result = multiply(INT_MAX / 2, 3); // Should wrap around or cause undefined behavior
     TEST_ASSERT_TRUE(result < 0); // This checks if overflow occurred
 }
 
 void test_multiply_underflow(void) {
-    int result = multiply(INT_MIN, 2);
+    int result = multiply(INT_MIN / 2, 3);
     TEST_ASSERT_TRUE(result > 0); // This checks if underflow occurred
 }
 
