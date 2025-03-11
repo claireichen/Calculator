@@ -9,7 +9,6 @@ int subtract(int a, int b) {
 }
 
 int multiply(int a, int b) {
-    if (a )
     return a * b;
 }
 
